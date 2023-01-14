@@ -12,16 +12,7 @@ jobs:
       - name: Create a test file
         run: echo "test" > test375.txt
 
-      - name: SharePoint uploader
-        uses: justinmclawhorn/spo-file-upload@v1
-        with:
-          site_url: https://dalerts-my.sharepoint.com/:f:/g/personal/suportengineer_dalerts_onmicrosoft_com/EqJY_vcCBOxFjnMQL8D9JiQBNa2okn97fH8Hu2CZo34sAA?e=COLfgC
-          username: ${{ secrets.SPO_USERNAME }}
-          password: ${{ secrets.SPO_PASSWORD }}
-          destination_path: share_point_text.txt
-          source_path: test375.txt
-          # or for multiple files
-          # source_path: dist/my-file1.txt;dist/my-file2.txt
+      
    
           
   
