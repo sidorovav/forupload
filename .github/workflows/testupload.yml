@@ -12,6 +12,16 @@ jobs:
       - name: Create a test file
         run: echo "test" > test375.txt
 
+
+      - name: SharePoint uploader
+        uses: su-dont/share-point-uploader@v2.1
+        with:
+          sp_url: https://dalerts-my.sharepoint.com/:f:/g/personal/suportengineer_dalerts_onmicrosoft_com/EqJY_vcCBOxFjnMQL8D9JiQBNa2okn97fH8Hu2CZo34sAA?e=COLfgC
+          sp_username: ${{ secrets.SPO_USERNAME }}
+          sp_password: ${{ secrets.SPO_PASSWORD }}
+          sp_folder: /My Documents/My Files
+          sp_file_name: share_point_text.txt
+          file: test375.txt
       
    
           
