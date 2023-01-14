@@ -9,9 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Build job
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2.3.4
-
       - name: Create a test file
         run: echo "test" > test375.txt
 
